@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    background-color: #6fade1;
+    color: wheat;
+}
+
+.form-control::placeholder {
+    color: aliceblue;
+    opacity: 1;
+}
+
+.Glassmorphism {
+    background: rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 70%;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.total,
+.complete,
+.pending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    height: 250px;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.total p {
+    font-size: 5rem;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.complete p {
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgba(61, 220, 61, 0.841);
+}
+
+.pending p {
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgb(165, 193, 28);
+}
+
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
+    background-color: #000000;
+    color: white;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.nav-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav a:hover{
+    color: #fd4646;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .top {
+      display: flex;
+      flex-direction: column;
+    }
+  }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+
+    <!-- Bootstrap CSS for design -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Assets/CSS/Style.css">
+</head>
+
+<body class=".bg-dark.bg-gradient">
+
+    <header>
+        <!-- NAV  -->
+        <div class="nav container">
+            <h2 style="font-family: 'Roboto Slab', serif;">Total Priority</h2>
+            <div class="nav-buttons">
+                <a class="nav-link active" href="Home.html">Home </a>
+                <a class="nav-link" href="Pages/add.html">Add Task</a>
+                <a class="nav-link" href="Pages/view.html">View Task</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="main">
+            <div class="card-main" data-aos="fade-up-right">
+                <h1 style="color: white;padding: 10px 15px;">𝙾𝚟𝚎𝚛𝚟𝚒𝚎𝚠</h1>
+                <div class="top">
+                    <div class="total Glassmorphism">Total Task
+                        <p id="totalTasks">0</p>
+                    </div>
+                    <div class="complete Glassmorphism">Completed Task
+                        <p id="completedTasks">0</p>
+                    </div>
+                </div>
+                <div class="top">
+                    <div class="pending Glassmorphism">Pending Task
+                        <p id="pendingTasks">0</p>
+                    </div>
+                    <div class="pending Glassmorphism" style="padding: 68px 20px;">
+                        <a href="Pages/view.html"
+                        style="display: flex; justify-content: end; text-decoration: none; color: wheat;font-size: 60px;">
+                        See All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="Assets/js/home.js"></script>
+</body>
+
+</html>
